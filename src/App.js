@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect} from 'react';
 import './imagenes/logo.PNG';
 import firebase from 'firebase';
 import './index.css';
+import './api';
 
 
 class App extends Component {
@@ -68,10 +69,11 @@ class App extends Component {
 
     }
   }
-
+  
   render() {
+    
     return (
-
+     
       <div className="main-div">
         
         {this.renderLogingButton()}
@@ -79,6 +81,7 @@ class App extends Component {
 
     );
   }
+ 
 }
 
 export default App;
